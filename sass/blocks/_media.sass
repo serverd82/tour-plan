@@ -4,6 +4,8 @@
 @media ( max-width: 992px  )
   .container
     max-width: 700px
+    &__small
+      width: 650px
   .logo
     width: 132px
   .navbar
@@ -12,12 +14,15 @@
       padding-top: 30px
     &__search
       margin-left: auto
-    &-menu__list
-      padding-top: 22px
-      padding-bottom: 22px
+    &-menu
+      &__list
+        padding-top: 22px
+        padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
+    &__user
+      margin-left: 50px
   .search
     &__input
       width: 340px
