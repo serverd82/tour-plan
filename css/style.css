@@ -1049,7 +1049,7 @@ template {
   grid-column: span 2;
 }
 
-.footer__contacts-form {
+.footer__contact-form {
   grid-column: span 2;
 }
 
@@ -1165,8 +1165,9 @@ template {
 .footer__bottom-list {
   display: flex;
   justify-content: space-between;
-  max-width: 323px;
+  max-width: 283px;
   margin: auto;
+  padding-left: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1175,6 +1176,7 @@ template {
 }
 
 .footer__bottom-image {
+  max-width: 137px;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1195,6 +1197,9 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .footer__input {
+    flex-basis: 100%;
   }
 }
 
@@ -1262,6 +1267,47 @@ template {
     width: 339px;
     height: 255px;
     margin-bottom: 20px;
+  }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
+  .footer-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 40px;
+  }
+  .footer__input {
+    flex-basis: 49%;
+  }
+  .footer__logo {
+    grid-row: 1 / 2;
+    grid-column: span 2;
+  }
+  .footer__social-network {
+    grid-row: 1 / 2;
+    grid-column: span 4;
+    align-self: center;
+  }
+  .footer__categories {
+    grid-row: 2 / 3;
+    grid-column: span 2;
+  }
+  .footer__legal {
+    grid-column: span 2;
+  }
+  .footer__additional {
+    grid-column: span 2;
+  }
+  .footer__contact-details {
+    grid-column: span 5;
+    grid-row: 3;
+  }
+  .footer__contact-form {
+    grid-column: span 5;
+    grid-row: 4;
+  }
+  .footer__bottom-list {
+    margin: 0;
   }
 }
 
@@ -1369,6 +1415,9 @@ template {
     width: 49%;
     height: 255px;
   }
+  .footer__input {
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1408,6 +1457,51 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .footer {
+    padding-top: 69px;
+    padding-bottom: 21px;
+  }
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .footer__additional {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .footer__categories {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
+  }
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__bottom-list {
+    margin-bottom: 10px;
+  }
+  .footer__bottom-image {
+    position: static;
   }
 }
 

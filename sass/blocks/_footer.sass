@@ -26,10 +26,11 @@
       align-items: start
       grid-row: 2 / 4
       grid-column: span 2
-  &__contact-details
-    grid-column: span 2
-  &__contacts-form
-    grid-column: span 2
+  &__contact
+    &-details
+      grid-column: span 2
+    &-form
+      grid-column: span 2
   &__form
     display: flex
     align-items: center
@@ -114,14 +115,16 @@
     &-list
       display: flex
       justify-content: space-between
-      max-width: 323px
+      max-width: 283px
       margin: auto
+      padding-left: 0
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
       list-style: none
     &-image
+      max-width: 137px
       position: absolute
       right: 0
       bottom: 0
