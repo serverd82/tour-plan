@@ -1156,6 +1156,7 @@ template {
   border: none;
   outline: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
